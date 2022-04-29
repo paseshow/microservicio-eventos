@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/pasexpress
+    username: paseshow
+    password: paseshow
+
+  jackson:
+    propertyNamingStrategy: LOWER_CAMEL_CASE
+
+  devools:
+    restart:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL55Dialect
